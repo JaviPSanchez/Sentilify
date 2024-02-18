@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>crypto dashboard</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Issue</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">AI Solution</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Data</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Architecture</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Tech</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--5">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Get the APP!</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          Crypto
+          <span class="realistic-marker-highlight">dashboard</span>
+          using<br />
+          <span class="realistic-marker-highlight">Sentiment analysis</span>
+        </h1>
+        <h4>extracting emotions through AI!</h4>
+        <img
+          src="img/hero.jpg"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+        <a
+          target="_blank"
+          class="header__img--2"
+          href="https://crypto-sentiment-dashboard.herokuapp.com/"
+          ><img src="./img/QRCode/QRCode.png" alt="QR Code"
+        /></a>
+        <!-- <img src="img/QRCode.png" class="header__img--2" alt="Codigo QR" /> -->
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">INTRODUCTION</h2>
+        <h3 class="section__header">Power is nothing without control!</h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/problem-lazy.svg"
+          data-src="img/problem.svg"
+          alt="Problem"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon modal-open" data-modal="modal1">
+            <ion-icon name="pulse"></ion-icon>
+          </div>
+          <h5 class="features__header">What? Why?</h5>
+          <p>
+            Sentiment analysis is extremely useful in social media monitoring as
+            it allows us to gain an overview of the wider public opinion behind
+            certain topics.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon modal-open" data-modal="modal2">
+            <ion-icon name="umbrella"></ion-icon>
+          </div>
+          <h5 class="features__header">How AI is going to guide us?</h5>
+          <p>
+            Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+            inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+            quibusdam!
+          </p>
+        </div>
+        <img
+          src="img/ia-lazy.svg"
+          data-src="img/ia.svg"
+          alt="IA"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/data-lazy.svg"
+          data-src="img/data.svg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon modal-open" data-modal="modal3">
+            <ion-icon name="cloud-outline"></ion-icon>
+          </div>
+          <h5 class="features__header">What data do I need?</h5>
+          <p>
+            Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+            eveniet consequatur odit quam quos possimus assumenda dicta fuga
+            inventore ab.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Architecture</h2>
+        <h3 class="section__header">What technologies do I need?</h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="
+              btn
+              operations__tab operations__tab--1 operations__tab--active
+            "
+            data-tab="1"
+          >
+            <span>01</span>NLP
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Cluster
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>RNN
+          </button>
+        </div>
+        <div
+          class="
+            operations__content
+            operations__content--1
+            operations__content--active
+          "
+        >
+          <div class="operations__icon operations__icon--1">
+            <ion-icon name="cloud-outline"></ion-icon>
+          </div>
+          <h5 class="operations__header">
+            Machine Learning -- (NLP) Natural Language Processing
+          </h5>
+          <p>
+            NLP consists in studying how computer languages and human languages
+            interact. We will use a Pyhton library called TextBlob and its
+            module sentiment for analyzing the subjectivity or polarity of a
+            text. The base of this model are statistics.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <ion-icon name="aperture"></ion-icon>
+          </div>
+          <h5 class="operations__header">
+            Machine Learning -- K-MEANS and PCA
+          </h5>
+          <p>
+            Contrary to Supervised Machine Learning, Unsupervised Learning
+            corresponds to situations in which we do not have a target variable
+            that we are trying to predict, but we hypothesize that the data we
+            have can be compared within groups. K-Means method is a partitioning
+            technique that separates observations into K-groups, where each
+            observation is considered to belong to the group where the mean is
+            the closest according to a given distance.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <ion-icon name="locate"></ion-icon>
+          </div>
+          <h5 class="operations__header">We will dive into Deep Learning!</h5>
+          <p>
+            Recurrent neural networks are a family of layers that can take into
+            account the sequential nature of input data. Recurrent networks have
+            shown impressive results and helped developping the field of NLP.
+            But they are far from perfect.<br /><br />Thanks to state-of-the-art
+            new methods like attention layers, we change the way sequential data
+            is processed by neural networks letting us to have better results.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">STACK TECH</h2>
+        <h3 class="section__header">From the front to the back: Full-stack!</h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Developer Tools!</h5>
+            <img class="testimonial__photo" src="./img/github.svg" alt="" />
+            <img class="testimonial__photo" src="./img/git.png" alt="" />
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <div class="testimonial">
+              <h5 class="testimonial__header">Front-End!</h5>
+              <img class="testimonial__photo" src="./img/html.png" alt="" />
+              <img class="testimonial__photo" src="./img/css.png" alt="" />
+              <img
+                class="testimonial__photo"
+                src="./img/javascript.png"
+                alt=""
+              />
+              <img class="testimonial__photo" src="./img/st.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <div class="testimonial">
+              <h5 class="testimonial__header">Back-End!</h5>
+              <img class="testimonial__photo" src="./img/python.png" alt="" />
+              <img class="testimonial__photo" src="./img/heroku.jpg" alt="" />
+              <img class="testimonial__photo" src="./img/netlify.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section" id="section--5">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">App</h2>
+        <h3 class="section__header">Choose the version that best suits you!</h3>
+      </div>
+
+      <div class="container-fluid">
+        <div>
+          <div class="card card--1 text-center">
+            <div class="title">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+              <h2>Basic</h2>
+            </div>
+            <div class="price">
+              <h4>FREE!</h4>
+            </div>
+            <div class="option">
+              <ul>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i>100 Tweets max
+                </li>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i>200 Google
+                  articles Analysis
+                </li>
+                <li><i class="fa fa-times" aria-hidden="true"></i>NLP</li>
+                <li><i class="fa fa-times" aria-hidden="true"></i>Cluster</li>
+              </ul>
+            </div>
+            <a
+              target="_blank"
+              href="https://crypto-sentiment-dashboard.herokuapp.com/"
+              >Order Now</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="card card--2 text-center">
+            <div class="title">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+              <h2>Premium</h2>
+            </div>
+            <div class="price">
+              <h4>
+                <sup>$</sup>150
+                <span class="text realistic-marker-highlight">monthly</span>
+              </h4>
+            </div>
+            <div class="option">
+              <ul>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i>All Basic
+                  features
+                </li>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i>Illimited
+                  Twitters
+                </li>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i>Illimited
+                  Articles
+                </li>
+                <li><i class="fa fa-times" aria-hidden="true"></i>RNN</li>
+              </ul>
+            </div>
+            <a
+              target="_blank"
+              href="https://crypto-sentiment-dashboard.herokuapp.com/"
+              >Order Now</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="card card--3 text-center">
+            <div class="title">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+              <h2>Custom</h2>
+            </div>
+            <div class="price">
+              <h4>
+                <sup>$</sup>2000
+                <span class="text realistic-marker-highlight">yearly</span>
+              </h4>
+            </div>
+            <div class="option">
+              <ul>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i> Custom Tweets
+                </li>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i> Targeted News
+                </li>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i> Advanced Models
+                </li>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i> Client Oriented
+                </li>
+              </ul>
+            </div>
+            <a
+              target="_blank"
+              href="https://crypto-sentiment-dashboard.herokuapp.com/"
+              >Order Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best way to keep control of your investments!
+        </h3>
+      </div>
+      <a
+        target="_blank"
+        href="https://crypto-sentiment-dashboard.herokuapp.com/"
+        class="btn btn--link app"
+        >Let's see the Web APP!</a
+      >
+    </section>
+
+    <footer class="footer">
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://github.com/JaviPSanchez"
+          >Javier Palomino</a
+        >
+        2021.
+      </p>
+    </footer>
+
+    <!-- MODAL PRINCIPAL -->
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Download your APP in just 1 <span class="highlight">click</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Go!</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- MODAL SECONDARY -->
+
+    <div class="modal-s" id="modal1">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal__header">
+        What is the <span class="realistic-marker-highlight">problem?</span>
+      </h2>
+      <ul class="modal__list">
+        <li class="modal__list--item">
+          <ion-icon class="modal__icon" name="expand"></ion-icon>Future
+        </li>
+        <li class="modal__list--item">
+          <ion-icon class="modal__icon" name="key"></ion-icon>Prediction
+        </li>
+        <li class="modal__list--item">
+          <ion-icon class="modal__icon" name="speedometer"></ion-icon>Emotions
+        </li>
+      </ul>
+    </div>
+    <div class="modal-s" id="modal2">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal__header">
+        Help us <span class="realistic-marker-highlight">IA!</span>
+      </h2>
+      <ul class="modal__list">
+        <li class="modal__list--item">
+          <ion-icon class="modal__icon" name="download"></ion-icon>Gather
+        </li>
+        <li class="modal__list--item">
+          <ion-icon class="modal__icon" name="grid"></ion-icon>Consume
+        </li>
+        <li class="modal__list--item">
+          <ion-icon class="modal__icon" name="share-alt"></ion-icon>Deliver
+        </li>
+      </ul>
+    </div>
+    <div class="modal-s" id="modal3">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal__header">
+        API - Data <span class="realistic-marker-highlight">Engineering</span>
+      </h2>
+      <ul class="modal__list">
+        <li class="modal__list--item">
+          <img class="modal__icon" src="img/yfinance.png" alt="" />yfinance
+        </li>
+        <li class="modal__list--item">
+          <img class="modal__icon" src="img/twitter.png" alt="" />Twitter API
+        </li>
+        <li class="modal__list--item">
+          <img class="modal__icon" src="img/Google_news.png" alt="" />Google
+          News
+        </li>
+      </ul>
+    </div>
+
+    <div class="modal-s" id="modal3">
+      <div class="modal-content"></div>
+    </div>
+
+    <svg
+      xmlns="//www.w3.org/2000/svg"
+      version="1.1"
+      class="svg-filters"
+      style="display: none"
+    >
+      <defs>
+        <filter id="marker-shape">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="0 0.15"
+            numOctaves="1"
+            result="warp"
+          />
+          <feDisplacementMap
+            xChannelSelector="R"
+            yChannelSelector="G"
+            scale="30"
+            in="SourceGraphic"
+            in2="warp"
+          />
+        </filter>
+      </defs>
+    </svg>
+
+    <script src="script.js"></script>
+  </body>
+</html>
